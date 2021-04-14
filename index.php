@@ -19,7 +19,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
         ],
     ];
 
-    // функция проверки наличия пользователя в базе данных
+    // имитация проверки наличия пользователя в базе данных
     function attempt($email, $password, $users) {
         $hashedPassword = base64_encode($password);
         $result = false;
